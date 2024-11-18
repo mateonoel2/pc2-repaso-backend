@@ -1,0 +1,18 @@
+INSERT INTO animes (title) VALUES
+    ('Naruto'), ('One Piece'), ('Attack on Titan'), ('Death Note'), 
+    ('Fullmetal Alchemist: Brotherhood'), ('My Hero Academia'),
+    ('Demon Slayer'), ('Jujutsu Kaisen'), ('Sword Art Online'), 
+    ('Bleach'), ('Fairy Tail'), ('Dragon Ball Z'), ('Hunter x Hunter'), 
+    ('Gintama'), ('Black Clover'), ('Re:Zero - Starting Life in Another World'), 
+    ('Tokyo Ghoul'), ('Steins;Gate'), ('Code Geass'), ('One Punch Man'),
+    ('Mob Psycho 100'), ('Neon Genesis Evangelion'), ('Vinland Saga'), 
+    ('Mushoku Tensei: Jobless Reincarnation'), ('Dr. Stone'), 
+    ('Shingeki no Kyojin'), ('Cowboy Bebop'), ('Elfen Lied'), 
+    ('Fate/Stay Night'), ('KonoSuba'), ('No Game No Life'), 
+    ('Noragami'), ('Your Lie in April'), ('Blue Exorcist'), 
+    ('Sword of the Stranger'), ('Akame ga Kill'), ('Highschool of the Dead'), 
+    ('Berserk'), ('Yuyu Hakusho'), ('Inuyasha'), 
+    ('The Promised Neverland'), ('Kabaneri of the Iron Fortress'), 
+    ('A Silent Voice'), ('Devilman Crybaby'), ('Erased'), 
+    ('Made in Abyss'), ('March Comes in Like a Lion'), ('Angel Beats'), 
+    ('The Rising of the Shield Hero');
