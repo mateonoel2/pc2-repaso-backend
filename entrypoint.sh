@@ -10,6 +10,9 @@ echo "Base de datos disponible. Ejecutando migraciones..."
 
 python -m alembic upgrade head
 
-psql $DATABASE_URL -f /app/init_data.sql
+apt-get update && apt-get install -y postgresql-client && rm -rf /var/lib/apt/lists/*
 
-exec uvicorn main:app --host 0.0.0.0 --port 8000
+python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+#psql $DATABASE_URL -f /app/init_data.sql
+
