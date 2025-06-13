@@ -14,9 +14,6 @@ RUN chmod +x entrypoint.sh
 
 RUN pip freeze
 RUN ls -la
-ENV DATABASE_URL="postgresql://postgres:postgres_postgrespc22@pc2.cbomesa6876b.us-east-1.rds.amazonaws.com:5432"
-ENV SECRET_KEY="secret_key"
-ENV ACCESS_TOKEN_EXPIRE_MINUTES=30
 
 EXPOSE 8000
 
