@@ -23,6 +23,18 @@ SparkyRoll API es un backend desarrollado en FastAPI que proporciona servicios p
 - **JWT**: Autenticación basada en tokens
 - **Uvicorn**: Servidor ASGI
 
+## 🚀 Inicio Rápido
+
+¿Tienes prisa? Ejecuta estos comandos para tener la API funcionando en minutos:
+
+```bash
+git clone https://github.com/TU_USUARIO/NOMBRE_DEL_REPOSITORIO.git
+cd NOMBRE_DEL_REPOSITORIO
+./setup.sh
+```
+
+¡Listo! La API estará disponible en http://localhost:8000
+
 ## Requisitos Previos
 
 Antes de ejecutar este proyecto, asegúrate de tener instalado:
@@ -42,49 +54,15 @@ Antes de ejecutar este proyecto, asegúrate de tener instalado:
    cd sparkyroll-api
    ```
 
-2. **Configurar variables de entorno**
+2. **Configurar variables de entorno (Opcional)**
    
-   Crea un archivo `.env` en la raíz del proyecto con las siguientes variables:
-   ```env
-   DATABASE_URL=postgresql://postgres:postgres@localhost:5432/sparkyroll_db
-   SECRET_KEY=tu_clave_secreta_super_segura_aqui
-   ACCESS_TOKEN_EXPIRE_MINUTES=30
+   El proyecto ya incluye configuración por defecto, pero puedes personalizar creando un archivo `.env`:
+   ```bash
+   cp env.example .env
+   # Edita el archivo .env si necesitas cambiar alguna configuración
    ```
 
-3. **Crear archivo docker-compose.yml**
-   
-   Crea un archivo `docker-compose.yml` en la raíz del proyecto:
-   ```yaml
-   version: '3.8'
-   
-   services:
-     db:
-       image: postgres:15
-       environment:
-         POSTGRES_DB: sparkyroll_db
-         POSTGRES_USER: postgres
-         POSTGRES_PASSWORD: postgres
-       ports:
-         - "5432:5432"
-       volumes:
-         - postgres_data:/var/lib/postgresql/data
-   
-     app:
-       build: .
-       ports:
-         - "8000:8000"
-       depends_on:
-         - db
-       environment:
-         DATABASE_URL: postgresql://postgres:postgres@db:5432/sparkyroll_db
-         SECRET_KEY: tu_clave_secreta_super_segura_aqui
-         ACCESS_TOKEN_EXPIRE_MINUTES: 30
-   
-   volumes:
-     postgres_data:
-   ```
-
-4. **Ejecutar la aplicación**
+3. **Ejecutar la aplicación**
    ```bash
    docker-compose up --build
    ```
