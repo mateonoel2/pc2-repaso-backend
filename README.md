@@ -28,8 +28,8 @@ SparkyRoll API es un backend desarrollado en FastAPI que proporciona servicios p
 ¿Tienes prisa? Ejecuta estos comandos para tener la API funcionando en minutos:
 
 ```bash
-git clone https://github.com/TU_USUARIO/NOMBRE_DEL_REPOSITORIO.git
-cd NOMBRE_DEL_REPOSITORIO
+git clone https://github.com/mateonoel2/pc2-repaso-backend.git
+cd pc2-repaso-backend
 ./setup.sh
 ```
 
@@ -50,8 +50,8 @@ Antes de ejecutar este proyecto, asegúrate de tener instalado:
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/TU_USUARIO/sparkyroll-api.git
-   cd sparkyroll-api
+   git clone https://github.com/mateonoel2/pc2-repaso-backend.git
+   cd pc2-repaso-backend
    ```
 
 2. **Configurar variables de entorno (Opcional)**
@@ -71,8 +71,8 @@ Antes de ejecutar este proyecto, asegúrate de tener instalado:
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/TU_USUARIO/sparkyroll-api.git
-   cd sparkyroll-api
+   git clone https://github.com/mateonoel2/pc2-repaso-backend.git
+   cd pc2-repaso-backend
    ```
 
 2. **Crear entorno virtual**
