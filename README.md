@@ -19,7 +19,7 @@ SparkyRoll API es un backend desarrollado en FastAPI que proporciona servicios p
 - **SQLAlchemy**: ORM para Python
 - **PostgreSQL**: Base de datos relacional
 - **Docker**: Containerización
-- **Alembic**: Migraciones de base de datos
+
 - **JWT**: Autenticación basada en tokens
 - **Uvicorn**: Servidor ASGI
 
@@ -102,17 +102,14 @@ Antes de ejecutar este proyecto, asegúrate de tener instalado:
    export ACCESS_TOKEN_EXPIRE_MINUTES=30
    ```
 
-6. **Ejecutar migraciones**
-   ```bash
-   alembic upgrade head
-   ```
-
-7. **Iniciar la aplicación**
+6. **Iniciar la aplicación**
    ```bash
    uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
    ```
 
 ## Uso de la API
+
+**Nota**: Las tablas de la base de datos se crean automáticamente cuando la aplicación inicia por primera vez. No necesitas ejecutar migraciones manualmente.
 
 Una vez que la aplicación esté ejecutándose, puedes acceder a:
 
@@ -165,13 +162,6 @@ sparkyroll-api/
 ```
 
 ## Desarrollo
-
-### Agregar Nuevas Migraciones
-
-```bash
-alembic revision --autogenerate -m "Descripción del cambio"
-alembic upgrade head
-```
 
 ### Ejecutar Tests
 

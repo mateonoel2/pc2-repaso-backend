@@ -6,9 +6,7 @@ while ! nc -z $(echo $DATABASE_URL | sed -E 's/.*:\/\/(.*):.*@([a-zA-Z0-9.-]+):.
   sleep 1
 done
 
-echo "Base de datos disponible. Ejecutando migraciones..."
-
-python -m alembic upgrade head
+echo "Base de datos disponible. Iniciando aplicación..."
 
 apt-get update && apt-get install -y postgresql-client && rm -rf /var/lib/apt/lists/*
 
