@@ -2,13 +2,13 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 
 from typing import List
 
-from models.anime import AnimeDB
-from models.database import get_db
-from models.history import UserHistory
-from models.user import UserDB
-from schemas.favorite import AnimeFavoriteRequest
-from schemas.history import AnimeHistoryRequest, AnimeHistoryResponse
-from services.auth import get_current_user
+from ..models.anime import AnimeDB
+from ..models.database import get_db
+from ..models.history import UserHistory
+from ..models.user import UserDB
+from ..schemas.favorite import AnimeFavoriteRequest
+from ..schemas.history import AnimeHistoryRequest, AnimeHistoryResponse
+from ..services.auth import get_current_user
 
 from sqlalchemy.orm import Session
 

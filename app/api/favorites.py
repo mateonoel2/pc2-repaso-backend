@@ -4,12 +4,12 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 
 
-from models.anime import AnimeDB
-from models.database import get_db
-from models.user import UserDB
-from schemas.anime import Anime
-from schemas.favorite import AnimeFavoriteRequest, AnimeFavoriteResponse
-from services.auth import get_current_user
+from ..models.anime import AnimeDB
+from ..models.database import get_db
+from ..models.user import UserDB
+from ..schemas.anime import Anime
+from ..schemas.favorite import AnimeFavoriteRequest, AnimeFavoriteResponse
+from ..services.auth import get_current_user
 
 
 router = APIRouter()

@@ -1,8 +1,8 @@
 from typing import List
 from fastapi import APIRouter, Depends, Query
 
-from models import anime, database
-from schemas.anime import Anime
+from ..models import anime, database
+from ..schemas.anime import Anime
 
 from sqlalchemy.orm import Session
 

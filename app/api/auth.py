@@ -1,11 +1,11 @@
 from fastapi import APIRouter, Depends, HTTPException, status
-from models.database import get_db
-from models.user import UserDB
+from ..models.database import get_db
+from ..models.user import UserDB
 from datetime import timedelta
 from sqlalchemy.orm import Session
 
-from schemas.user import UserCreate, Token, User, LoginRequest
-from services.auth import (
+from ..schemas.user import UserCreate, Token, User, LoginRequest
+from ..services.auth import (
     authenticate_user,
     create_access_token,
     get_user,

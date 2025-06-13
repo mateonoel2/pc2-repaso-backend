@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from api import auth, anime, favorites, history
-from models.database import Base, engine
+from .api import auth, anime, favorites, history
+from .models.database import Base, engine
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()

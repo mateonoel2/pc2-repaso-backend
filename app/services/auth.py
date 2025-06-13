@@ -8,10 +8,10 @@ from sqlalchemy.orm import Session
 from datetime import datetime, timedelta, timezone
 
 
-from models.user import UserDB
-from schemas.user import TokenData
-from models.database import get_db
-from config import Settings
+from ..models.user import UserDB
+from ..schemas.user import TokenData
+from ..models.database import get_db
+from ..config import Settings
 
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
